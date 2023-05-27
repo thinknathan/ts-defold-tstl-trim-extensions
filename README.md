@@ -6,12 +6,9 @@ TypeScriptToLua plugin that strips the final extension from files with nested ex
 ## Installation
 
 1. Update `TypeScriptToLua` to the latest version.
-2. Install `yarn add git+https://git@github.com/thinknathan/ts-defold-tstl-trim-extensions.git -D`
-
-## Usage
-
-1. Remove `"trimExtensions": true` from the `tstl` section of `tsconfig.json`.
-2. Add this plugin to the `tstl.luaPlugins` section of `tsconfig.json`.
+2. Remove `"trimExtensions": true` from the `tstl` section of `tsconfig.json`.
+3. Install this plugin `yarn add git+https://git@github.com/thinknathan/ts-defold-tstl-trim-extensions.git -D` 
+4. Add this plugin to the `tstl.luaPlugins` section of `tsconfig.json`.
 
 ```json
 "tstl": {
@@ -22,3 +19,13 @@ TypeScriptToLua plugin that strips the final extension from files with nested ex
 		]
 	}
 ```
+
+## Example
+
+Files with multiple nested extensions will have their final extension (`.lua` by default) stripped.
+
+`player.script.ts` will be output as `player.script`
+
+Files without multiple extensions will not be changed by this plugin.
+
+`player.ts` will be output as `player.lua` as usual.
