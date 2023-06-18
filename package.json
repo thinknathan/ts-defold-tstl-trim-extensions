@@ -1,6 +1,6 @@
 {
 	"name": "@ts-defold/tstl-trim-extensions",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "TypeScriptToLua plugin that strips the final extension from files with nested extensions",
 	"repository": "github:thinknathan/ts-defold-tstl-trim-extensions",
 	"keywords": [
