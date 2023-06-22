@@ -31,6 +31,14 @@ npm install git+https://git@github.com/thinknathan/ts-defold-tstl-trim-extension
 2. Update `TypeScriptToLua` to v1.5.0 or newer.
 3. Remove `"trimExtensions": true` from the `tstl` section of `tsconfig.json`.
 
+```diff
+{
+	"tstl": {
+-		"trimExtensions": true,
+	}
+}
+```
+
 ## Example
 
 Files with multiple nested extensions will have their final extension (`.lua` by default) stripped.
