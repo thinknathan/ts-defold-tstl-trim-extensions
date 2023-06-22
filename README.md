@@ -15,14 +15,14 @@ npm install git+https://git@github.com/thinknathan/ts-defold-tstl-trim-extension
 
 2. Add this plugin to the `tstl.luaPlugins` section of `tsconfig.json`.
 
-```json
+```diff
 "tstl": {
-		"luaPlugins": [
-			{
-				"name": "@ts-defold/tstl-trim-extensions"
-			}
-		]
-	}
+	"luaPlugins": [
+		{
++			"name": "@ts-defold/tstl-trim-extensions"
+		}
+	]
+}
 ```
 
 ### Update an existing TS-Defold project
