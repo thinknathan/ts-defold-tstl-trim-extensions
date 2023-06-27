@@ -1,4 +1,4 @@
-# @ts-defold/tstl-trim-extensions
+# tstl-trim-extensions
 TypeScriptToLua plugin that strips the final extension from files with nested extensions.
 
 [@ts-defold](https://github.com/ts-defold) is a wonderful project, but it relies on patches to the [TypeScriptToLua](https://github.com/TypeScriptToLua/TypeScriptToLua) project that are fragile and break on new versions of TSTL. This TSTL plugin can be used instead of the patch.
@@ -8,9 +8,9 @@ TypeScriptToLua plugin that strips the final extension from files with nested ex
 1. Install this plugin.
 
 ```bash
-yarn add git+https://git@github.com/thinknathan/ts-defold-tstl-trim-extensions.git#^1.0.0 -D
+yarn add tstl-trim-extensions -D
 # or
-npm install git+https://git@github.com/thinknathan/ts-defold-tstl-trim-extensions.git#^1.0.0 --save-dev
+npm install tstl-trim-extensions --save-dev
 ```
 
 2. Add this plugin to the `tstl.luaPlugins` section of `tsconfig.json`.
@@ -19,7 +19,7 @@ npm install git+https://git@github.com/thinknathan/ts-defold-tstl-trim-extension
 "tstl": {
 	"luaPlugins": [
 		{
-+			"name": "@ts-defold/tstl-trim-extensions"
++			"name": "tstl-trim-extensions"
 		}
 	]
 }
