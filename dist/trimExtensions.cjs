@@ -5,9 +5,14 @@ module.exports = {
 		void emitHost;
 
 		for (const file of result) {
-			const fileExtension = file.outputPath.split('.').pop();
-			if (file.outputPath.split('.').length > 2) {
-				file.outputPath = file.outputPath.slice(0, -(fileExtension.length + 1));
+			const pathParts = file.outputPath.split(/[/\\]/);
+			const fileName = pathParts.pop();
+			const fileExtension = fileName.split('.').pop();
+
+			if (fileName.split('.').length > 2) {
+				const newFileName = fileName.slice(0, -(fileExtension.length + 1));
+				pathParts.push(newFileName);
+				file.outputPath = pathParts.join('/');
 			}
 		}
 	},
