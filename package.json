@@ -13,6 +13,7 @@
 	],
 	"author": "Nathan Bolton (https://thinknathan.ca/)",
 	"license": "MIT",
+	"type": "commonjs",
 	"main": "dist/trimExtensions.cjs",
 	"files": [
 		"dist/trimExtensions.cjs"
