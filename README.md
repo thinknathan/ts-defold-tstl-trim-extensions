@@ -1,4 +1,7 @@
 # tstl-trim-extensions
+
+<a href="https://discord.gg/eukcq5m"><img alt="Chat with us!" src="https://img.shields.io/discord/766898804896038942.svg?colorB=7581dc&logo=discord&logoColor=white"></a>
+
 TypeScriptToLua plugin that strips the final extension from files with nested extensions.
 
 Used by [@ts-defold](https://github.com/ts-defold).
@@ -48,6 +51,10 @@ Files with multiple nested extensions will have their final extension (`.lua` by
 Files without multiple extensions will not be changed by this plugin.
 
 `player.ts` will be output as `player.lua` as usual.
+
+<p align="center" class="h4">
+  TypeScript :heart: Defold
+</p>
 
 ## License
 
