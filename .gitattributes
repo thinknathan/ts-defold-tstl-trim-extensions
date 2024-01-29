@@ -3,3 +3,7 @@
 
 # Exclude files from archive
 .gitattributes export-ignore
+.eslintignore export-ignore
+.eslintrc export-ignore
+.prettierignore export-ignore
+.prettierrc.json export-ignore
