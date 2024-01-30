@@ -1,6 +1,6 @@
 # tstl-trim-extensions
 
-<a href="https://discord.gg/eukcq5m"><img alt="Chat with us!" src="https://img.shields.io/discord/766898804896038942.svg?colorB=7581dc&logo=discord&logoColor=white"></a>
+[![CI](https://github.com/thinknathan/ts-defold-tstl-trim-extensions/actions/workflows/ci.yml/badge.svg)](https://github.com/thinknathan/ts-defold-tstl-trim-extensions/actions/workflows/ci.yml) <a href="https://discord.gg/eukcq5m"><img alt="Chat with us!" src="https://img.shields.io/discord/766898804896038942.svg?colorB=7581dc&logo=discord&logoColor=white"></a>
 
 TypeScriptToLua plugin that strips the final extension from files with nested extensions.
 
