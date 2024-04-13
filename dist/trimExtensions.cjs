@@ -1,3 +1,6 @@
+// @ts-check
+'use strict';
+
 module.exports = {
 	beforeEmit(program, options, emitHost, result) {
 		void program;
