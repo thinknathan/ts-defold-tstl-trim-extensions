@@ -1,6 +1,6 @@
 {
 	"name": "tstl-trim-extensions",
-	"version": "1.0.4",
+	"version": "2.0.0",
 	"description": "TypeScriptToLua plugin that strips the final extension from files with nested extensions",
 	"repository": {
 		"type": "git",

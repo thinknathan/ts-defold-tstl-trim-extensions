@@ -8,12 +8,17 @@ module.exports = {
 		void emitHost;
 
 		for (const file of result) {
+			/**
+			 * @type {string[]}
+			 */
 			const pathParts = file.outputPath.split(/[/\\]/);
 			const fileName = pathParts.pop();
-			const fileExtension = fileName.split('.').pop();
 
-			if (fileName.split('.').length > 2) {
-				const newFileName = fileName.slice(0, -(fileExtension.length + 1));
+			if (fileName && fileName.endsWith('_script.lua')) {
+				const newFileName = fileName
+					.replace('_gui_script.lua', '.gui_script')
+					.replace('_render_script.lua', '.render_script')
+					.replace('_script.lua', '.script');
 				pathParts.push(newFileName);
 				file.outputPath = pathParts.join('/');
 			}
